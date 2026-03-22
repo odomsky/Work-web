@@ -287,8 +287,7 @@ h1 {
 .skill-group { padding: 1.2rem; }
 .skill-group ul { margin: 0; padding-left: 1rem; }
 
-.cert-list,
-.contact-list {
+.cert-list {
   margin: 0;
   padding-left: 1.1rem;
 }

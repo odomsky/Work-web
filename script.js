@@ -8,6 +8,18 @@ if (yearTarget) {
   yearTarget.textContent = new Date().getFullYear();
 }
 
+const navLabels = {
+  cs: { open: 'Otevřít navigaci', close: 'Zavřít navigaci' },
+  en: { open: 'Open navigation',  close: 'Close navigation' }
+};
+
+function closeMenu() {
+  const lang = document.documentElement.lang || 'cs';
+  mainNav.classList.remove('is-open');
+  navToggle.setAttribute('aria-expanded', 'false');
+  navToggle.setAttribute('aria-label', (navLabels[lang] || navLabels.cs).open);
+}
+
 function setLanguage(lang) {
   langNodes.forEach((node) => {
     node.classList.toggle('hidden', node.dataset.lang !== lang);
@@ -24,7 +36,8 @@ function setLanguage(lang) {
 }
 
 const storedLanguage = localStorage.getItem('preferredLanguage');
-setLanguage(storedLanguage === 'en' ? 'en' : 'cs');
+const browserLang = navigator.language?.startsWith('en') ? 'en' : 'cs';
+setLanguage(storedLanguage ?? browserLang);
 
 if (langButtons.length) {
   langButtons.forEach((btn) => {
@@ -35,7 +48,21 @@ if (langButtons.length) {
 if (navToggle && mainNav) {
   navToggle.addEventListener('click', () => {
     const isOpen = mainNav.classList.toggle('is-open');
+    const lang = document.documentElement.lang || 'cs';
+    const labels = navLabels[lang] || navLabels.cs;
     navToggle.setAttribute('aria-expanded', isOpen);
-    navToggle.setAttribute('aria-label', isOpen ? 'Zavřít navigaci' : 'Otevřít navigaci');
+    navToggle.setAttribute('aria-label', isOpen ? labels.close : labels.open);
+  });
+
+  document.querySelectorAll('.nav-list a').forEach((link) => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  document.addEventListener('click', (e) => {
+    if (mainNav.classList.contains('is-open') &&
+        !mainNav.contains(e.target) &&
+        !navToggle.contains(e.target)) {
+      closeMenu();
+    }
   });
 }

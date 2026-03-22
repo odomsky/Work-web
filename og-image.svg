@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f766e"/>
+      <stop offset="100%" style="stop-color:#0a5b55"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1200" height="630" fill="rgba(0,0,0,0.15)"/>
+  <circle cx="900" cy="100" r="300" fill="rgba(255,255,255,0.04)"/>
+  <circle cx="200" cy="550" r="200" fill="rgba(255,255,255,0.03)"/>
+
+  <!-- Monogram -->
+  <rect x="80" y="80" width="72" height="72" rx="14" fill="rgba(255,255,255,0.15)"/>
+  <text x="116" y="133" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="800" font-size="36" fill="white">OD</text>
+
+  <!-- Name -->
+  <text x="80" y="310" font-family="system-ui,sans-serif" font-weight="800" font-size="72" fill="white" letter-spacing="-1">Ondřej Domský</text>
+
+  <!-- Title -->
+  <text x="80" y="390" font-family="system-ui,sans-serif" font-weight="400" font-size="36" fill="rgba(255,255,255,0.85)">Cloud &amp; DevOps Engineer</text>
+
+  <!-- Tags -->
+  <rect x="80" y="440" width="130" height="44" rx="8" fill="rgba(255,255,255,0.15)"/>
+  <text x="145" y="468" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="600" font-size="20" fill="white">Azure</text>
+
+  <rect x="226" y="440" width="150" height="44" rx="8" fill="rgba(255,255,255,0.15)"/>
+  <text x="301" y="468" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="600" font-size="20" fill="white">PCI DSS</text>
+
+  <rect x="392" y="440" width="180" height="44" rx="8" fill="rgba(255,255,255,0.15)"/>
+  <text x="482" y="468" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="600" font-size="20" fill="white">Bicep / Terraform</text>
+
+  <rect x="588" y="440" width="130" height="44" rx="8" fill="rgba(255,255,255,0.15)"/>
+  <text x="653" y="468" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="600" font-size="20" fill="white">CI/CD</text>
+
+  <!-- URL -->
+  <text x="80" y="565" font-family="system-ui,sans-serif" font-size="22" fill="rgba(255,255,255,0.55)">odomsky.github.io/Work-web</text>
+</svg>
