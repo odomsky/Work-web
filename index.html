@@ -1,137 +1,222 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="cs">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Ondřej Domský — Azure & DevOps Engineer. Cloud infrastructure, security, and automation specialist based in the Czech Republic." />
-  <title>Ondřej Domský · Azure &amp; DevOps Engineer</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ondrej Domsky | Cloud & DevOps Engineer (Azure)</title>
+  <meta name="description" content="Portfolio Ondřeje Domského: Azure infrastructure, DevOps, cloud security, compliance, automation.">
+  <meta name="keywords" content="Ondrej Domsky, Azure, DevOps, Cloud Security, PCI DSS, Infrastructure as Code, CI/CD, Cloud Engineer">
+  <meta name="author" content="Ondrej Domsky">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://ondrasplayground.xyz/">
+  <meta property="og:title" content="Ondrej Domsky | Cloud & DevOps Engineer (Azure)">
+  <meta property="og:description" content="Azure infrastructure, DevOps, cloud security and compliance.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ondrasplayground.xyz/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ondrej Domsky | Cloud & DevOps Engineer (Azure)">
+  <meta name="twitter:description" content="Azure infrastructure, DevOps, cloud security and compliance.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Ondrej Domsky",
+      "jobTitle": "Cloud & DevOps Engineer",
+      "description": "Cloud & DevOps Engineer focused on Azure infrastructure, cloud security and compliance.",
+      "knowsAbout": ["Microsoft Azure", "DevOps", "Cloud Security", "PCI DSS", "Infrastructure as Code", "CI/CD"],
+      "url": "https://ondrasplayground.xyz/"
+    }
+  </script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Přeskočit na obsah / Skip to content</a>
 
-  <!-- ─── HERO ─────────────────────────────────────────────────── -->
-  <header class="hero">
-    <div class="container">
-      <p class="hero-eyebrow">Azure &amp; DevOps Engineer</p>
-      <h1 class="hero-name">Ondřej Domský</h1>
-      <p class="hero-tagline">
-        Building reliable, secure cloud infrastructure — from pipeline to production.
-      </p>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <p class="brand">OD</p>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#what-i-do">What I Do</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch" role="group" aria-label="Language switch">
+        <button class="lang-btn is-active" type="button" data-set-lang="cs">CZ</button>
+        <button class="lang-btn" type="button" data-set-lang="en">EN</button>
+      </div>
     </div>
   </header>
 
-  <main>
-
-    <!-- ─── ABOUT ─────────────────────────────────────────────── -->
-    <section id="about" class="section">
-      <div class="container">
-        <h2 class="section-title">About</h2>
-        <p class="about-text">
-          I am an Azure and DevOps engineer with approximately 2.5 years of hands-on
-          experience designing and operating cloud infrastructure on Microsoft Azure.
-          My work spans CI/CD automation, infrastructure as code, container workloads,
-          and cloud security — with a focus on keeping systems observable, maintainable,
-          and compliant. I hold the AZ-900 and AZ-104 certifications and am currently
-          preparing for AZ-500 (Azure Security Engineer Associate).
-        </p>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Cloud Infrastructure | DevOps Engineering | Cloud Security</p>
+          <h1 id="hero-title">Ondrej Domsky</h1>
+          <p class="headline">Cloud & DevOps Engineer — Azure Infrastructure & Security</p>
+          <p class="lead" data-lang="cs">Navrhuji a provozuji bezpečné, škálovatelné a automatizované cloud platformy v Microsoft Azure se zaměřením na compliance prostředí.</p>
+          <p class="lead hidden" data-lang="en">I design and operate secure, scalable, and automated cloud platforms in Microsoft Azure with focus on compliance environments.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#contact">
+              <span data-lang="cs">Kontakt</span>
+              <span class="hidden" data-lang="en">Contact</span>
+            </a>
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/ondrej-domsky/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a class="btn btn-ghost" href="https://github.com/odomsky" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
+        <aside class="hero-card" aria-label="Key areas">
+          <h2>Professional Focus</h2>
+          <ul>
+            <li>Azure Architecture</li>
+            <li>Cloud Security & PCI DSS</li>
+            <li>DevOps & CI/CD Automation</li>
+            <li>Scalable Infrastructure Design</li>
+          </ul>
+        </aside>
       </div>
     </section>
 
-    <!-- ─── SKILLS ────────────────────────────────────────────── -->
-    <section id="skills" class="section section-alt">
+    <section id="what-i-do" class="section" aria-labelledby="what-title">
       <div class="container">
-        <h2 class="section-title">Skills</h2>
-        <div class="skills-grid">
-
-          <div class="skill-group">
-            <h3 class="skill-group-title">Cloud</h3>
-            <ul class="skill-list">
-              <li><span class="skill-name">Microsoft Azure</span><span class="skill-level level-advanced">Advanced</span></li>
-              <li><span class="skill-name">Azure Bicep</span><span class="skill-level level-mid">Basic – Mid</span></li>
-              <li><span class="skill-name">Terraform</span><span class="skill-level level-mid">Basic – Mid</span></li>
-            </ul>
-          </div>
-
-          <div class="skill-group">
-            <h3 class="skill-group-title">DevOps</h3>
-            <ul class="skill-list">
-              <li><span class="skill-name">Azure DevOps</span><span class="skill-level level-advanced">Advanced</span></li>
-              <li><span class="skill-name">Docker</span><span class="skill-level level-mid">Mid</span></li>
-              <li><span class="skill-name">PowerShell / Azure CLI</span><span class="skill-level level-advanced">Advanced</span></li>
-              <li><span class="skill-name">SonarCloud</span><span class="skill-level level-mid">Mid</span></li>
-            </ul>
-          </div>
-
-          <div class="skill-group">
-            <h3 class="skill-group-title">Security</h3>
-            <ul class="skill-list">
-              <li><span class="skill-name">Cloud Security</span><span class="skill-level level-midadv">Mid – Advanced</span></li>
-              <li><span class="skill-name">Snyk</span><span class="skill-level level-mid">Mid</span></li>
-              <li><span class="skill-name">Azure Policy &amp; RBAC</span><span class="skill-level level-midadv">Mid – Advanced</span></li>
-            </ul>
-          </div>
-
+        <h2 id="what-title">What I Do</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Cloud Infrastructure</h3>
+            <p data-lang="cs">Design a provoz škálovatelných Azure environments se správným governance a cost management.</p>
+            <p class="hidden" data-lang="en">Design and operation of scalable Azure environments with proper governance and cost management.</p>
+          </article>
+          <article class="card">
+            <h3>DevOps & Automation</h3>
+            <p data-lang="cs">CI/CD pipelines, release automation a Infrastructure as Code (Bicep/Terraform) pro rychlé a spolehlivé delivery.</p>
+            <p class="hidden" data-lang="en">CI/CD pipelines, release automation, and Infrastructure as Code (Bicep/Terraform) for fast and reliable delivery.</p>
+          </article>
+          <article class="card">
+            <h3>Cloud Security</h3>
+            <p data-lang="cs">Identity management, PIM, Defender for Cloud a návrh bezpečných compliance environments (včetně PCI DSS).</p>
+            <p class="hidden" data-lang="en">Identity management, PIM, Defender for Cloud, and design of secure compliance environments (including PCI DSS).</p>
+          </article>
+          <article class="card">
+            <h3>Operations</h3>
+            <p data-lang="cs">Monitoring, incident troubleshooting a optimalizace production operations i cost.</p>
+            <p class="hidden" data-lang="en">Monitoring, incident troubleshooting, and optimization of production operations and cost.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- ─── CERTIFICATIONS ────────────────────────────────────── -->
-    <section id="certifications" class="section">
+    <section id="skills" class="section alt" aria-labelledby="skills-title">
       <div class="container">
-        <h2 class="section-title">Certifications</h2>
+        <h2 id="skills-title">Skills & Technologies</h2>
+        <div class="skill-grid">
+          <article class="skill-group">
+            <h3>Cloud & Azure</h3>
+            <ul>
+              <li>Azure architecture design</li>
+              <li>Azure networking (VNet, Private Endpoints, Hub-Spoke)</li>
+              <li>Azure Container Apps, App Services</li>
+              <li>Azure SQL, Storage, Key Vault</li>
+              <li>Azure Monitor & Log Analytics</li>
+            </ul>
+          </article>
+          <article class="skill-group">
+            <h3>DevOps & Infrastructure</h3>
+            <ul>
+              <li>CI/CD pipelines</li>
+              <li>Azure DevOps, YAML pipelines</li>
+              <li>Infrastructure as Code (Bicep / Terraform)</li>
+              <li>Git workflows</li>
+              <li>Build & release automation</li>
+            </ul>
+          </article>
+          <article class="skill-group">
+            <h3>Security & Compliance</h3>
+            <ul>
+              <li>Cloud security architecture</li>
+              <li>PCI DSS environment design</li>
+              <li>Microsoft Defender for Cloud</li>
+              <li>Entra ID, RBAC, PIM, Just-in-Time access</li>
+              <li>Security monitoring & alerting</li>
+            </ul>
+          </article>
+          <article class="skill-group">
+            <h3>Containers & Operations</h3>
+            <ul>
+              <li>Docker</li>
+              <li>Containerized applications</li>
+              <li>Container deployment in Azure</li>
+              <li>Incident troubleshooting</li>
+              <li>Cost optimization</li>
+            </ul>
+          </article>
+          <article class="skill-group">
+            <h3>Tools & Scripting</h3>
+            <ul>
+              <li>PowerShell / Azure CLI</li>
+              <li>SonarCloud, Snyk</li>
+              <li>Git (Azure Repos, GitHub)</li>
+              <li>Visual Studio / VS Code</li>
+            </ul>
+          </article>
+          <article class="skill-group">
+            <h3>Development</h3>
+            <ul>
+              <li>.NET / C#</li>
+              <li>API design</li>
+              <li>Docker-based deployments</li>
+              <li>Cloud architecture patterns</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications" class="section" aria-labelledby="certifications-title">
+      <div class="container">
+        <h2 id="certifications-title">Certifications</h2>
         <ul class="cert-list">
-          <li class="cert-item">
-            <div class="cert-badge">✓</div>
-            <div class="cert-info">
-              <span class="cert-name">Microsoft Certified: Azure Fundamentals</span>
-              <span class="cert-code">AZ-900</span>
-            </div>
-          </li>
-          <li class="cert-item">
-            <div class="cert-badge">✓</div>
-            <div class="cert-info">
-              <span class="cert-name">Microsoft Certified: Azure Administrator Associate</span>
-              <span class="cert-code">AZ-104</span>
-            </div>
-          </li>
-          <li class="cert-item cert-item--studying">
-            <div class="cert-badge studying">…</div>
-            <div class="cert-info">
-              <span class="cert-name">Microsoft Certified: Azure Security Engineer Associate</span>
-              <span class="cert-code">AZ-500 <em>(in progress)</em></span>
-            </div>
-          </li>
+          <li>Microsoft Certified: Azure Fundamentals (AZ-900)</li>
+          <li>Microsoft Certified: Azure Administrator Associate (AZ-104)</li>
+          <li>Microsoft Certified: Azure Security Engineer Associate (AZ-500) — <em data-lang="cs">studuje</em><em class="hidden" data-lang="en">in progress</em></li>
         </ul>
       </div>
     </section>
 
-    <!-- ─── CONTACT ───────────────────────────────────────────── -->
-    <section id="contact" class="section section-alt">
-      <div class="container">
-        <h2 class="section-title">Contact</h2>
-        <p class="contact-intro">
-          Open to new opportunities. Feel free to reach out via email or LinkedIn.
-        </p>
+    <section id="about" class="section alt" aria-labelledby="about-title">
+      <div class="container about-wrap">
+        <h2 id="about-title">About</h2>
+        <p data-lang="cs">Jsem cloud engineer zaměřený na Azure infrastructure, security a compliance environments. Baví mě stavět automation, robustní operational standards a dlouhodobě udržitelné cloud platformy.</p>
+        <p class="hidden" data-lang="en">I am a cloud engineer focused on Azure infrastructure, security, and compliance environments. I enjoy building automation, robust operational standards, and sustainable cloud platforms.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="container contact-wrap">
+        <h2 id="contact-title">Contact</h2>
+        <p data-lang="cs">Máš zájem o spolupráci nebo konzultaci? Ozvi se.</p>
+        <p class="hidden" data-lang="en">Interested in collaboration or consulting? Let's connect.</p>
         <ul class="contact-list">
-          <li>
-            <span class="contact-label">Email</span>
-            <a class="contact-link" href="mailto:domsky.ondrej@gmail.com">domsky.ondrej@gmail.com</a>
-          </li>
-          <li>
-            <span class="contact-label">LinkedIn</span>
-            <a class="contact-link" href="https://www.linkedin.com/in/ondrej-domsky/" target="_blank" rel="noopener">linkedin.com/in/ondrej-domsky</a>
-          </li>
+          <li><a href="mailto:domsky.ondrej@gmail.com">domsky.ondrej@gmail.com</a></li>
+          <li><a href="https://www.linkedin.com/in/ondrej-domsky/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://github.com/odomsky" target="_blank" rel="noopener noreferrer">GitHub</a></li>
         </ul>
       </div>
     </section>
-
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2026 Ondřej Domský</p>
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p><span id="year"></span> Ondrej Domsky.</p>
     </div>
   </footer>
 
+  <script src="script.js" defer></script>
 </body>
 </html>
